@@ -13,8 +13,13 @@ def word_counter(filename):
         for word in words:
             word_count[word] = word_count.get(word, 0) + 1
 
+    # Iterate through dictionary and print:
+    for key, value in word_count.items():
+        print(f"{key} {value}")
+
+
     return word_count
 
-print(word_counter("twain.txt"))
+word_counter("test.txt")
 
 
